@@ -1,0 +1,22 @@
+/* Chronicon Brand Tokens */
+:root {
+  --chronicon-navy: #14213D;
+  --chronicon-red: #E63946;
+  --chronicon-orange: #FF7A00;
+  --chronicon-yellow: #F4C542;
+  --chronicon-green: #18A558;
+  --chronicon-blue: #0066CC;
+  --chronicon-purple: #7B2CBF;
+  --chronicon-cream: #F7F3EA;
+  --chronicon-white: #FFFFFF;
+  --chronicon-text: #4B5563;
+  --chronicon-gradient: linear-gradient(
+    90deg,
+    var(--chronicon-red),
+    var(--chronicon-orange),
+    var(--chronicon-yellow),
+    var(--chronicon-green),
+    var(--chronicon-blue),
+    var(--chronicon-purple)
+  );
+}

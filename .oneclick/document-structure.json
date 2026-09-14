@@ -1,0 +1,29 @@
+{
+  "projectName": "Chronicon",
+  "version": "1.0.0",
+  "description": "Portal web informativo de historia y patrimonio cultural de Colombia",
+  "developer": "María José Olaya Suárez",
+  "architecture": "Frontend Vanilla (HTML5 semántico, CSS3 Flexbox/Transitions, Vanilla JS, Bootstrap 5)",
+  "structure": {
+    "root": [
+      "index.html",
+      "style.css",
+      "script.js",
+      "README.md",
+      "context_chronicon_oneclick.md"
+    ],
+    "directories": {
+      "pages/": [
+        "pages/lugares.html",
+        "pages/detalle.html",
+        "pages/comunidad.html",
+        "pages/reserva.html"
+      ],
+      "assets/images/": [],
+      ".oneclick/": [
+        ".oneclick/document-structure.json",
+        ".oneclick/workflow-state.json"
+      ]
+    }
+  }
+}

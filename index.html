@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronicon | Descubre el pasado. Vive el lugar.</title>
+
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Estilos CSS propios del proyecto -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. ENCABEZADO ACADÉMICO OBLIGATORIO (REQUISITO EXPLÍCITO DEL CURSO)
+       ======================================================================== -->
+  <div class="academic-banner">
+    <div class="container">
+      <h1>Chronicon</h1>
+      <p class="purpose-text">
+        Chronicon es un sitio web informativo creado para acercar a estudiantes, jóvenes y viajeros a lugares de valor histórico mediante contenido visual, datos curiosos y una experiencia de reserva demostrativa.
+      </p>
+      <hr class="academic-divider">
+      <h2 class="author-heading">Desarrollado por <span>María José Olaya Suárez</span></h2>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       2. NAVEGACIÓN PRINCIPAL (NAV)
+       ======================================================================== -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom" href="index.html">
+        <img src="assets/isotipos.png" alt="Isotipo Chronicon" class="brand-isotipo-img">
+        Chronicon
+      </a>
+
+      <!-- Botón de menú hamburguesa para dispositivos móviles -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarChronicon" aria-controls="navbarChronicon" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarChronicon">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-1">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="#inicio"><i class="bi bi-house-door"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#emblemas"><i class="bi bi-award"></i> Emblemas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#lugares"><i class="bi bi-map"></i> Lugares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#comunidad"><i class="bi bi-people"></i> Comunidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#reserva"><i class="bi bi-calendar-check"></i> Reservar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#acerca"><i class="bi bi-info-circle"></i> Acerca del Proyecto</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-chronicon-rainbow btn-sm" href="#reserva">
+              <i class="bi bi-ticket-perforated"></i> Planear Visita
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       3. HERO SECTION (HEADER)
+       ======================================================================== -->
+  <header id="inicio" class="hero-header">
+    <div class="container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-block">
+          <span class="hero-tagline">
+            <i class="bi bi-stars"></i> Descubre el pasado. Vive el lugar.
+          </span>
+          <h2 class="hero-title text-white">
+            Historias que no solo se leen, <span>se visitan.</span>
+          </h2>
+          <p class="hero-description">
+            Descubre lugares que marcaron nuestra historia, conoce sus secretos y planea tu próxima visita mediante una experiencia interactiva, colorida y visual.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#lugares" class="btn btn-chronicon-rainbow">
+              <i class="bi bi-compass"></i> Explorar lugares
+            </a>
+            <a href="#reserva" class="btn btn-chronicon-outline text-white border-white">
+              <i class="bi bi-calendar2-plus"></i> Reservar una visita
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-graphics-showcase d-none d-md-block">
+          <div class="hero-emblem-wrapper">
+            <img src="assets/isotipos2.png" alt="Isotipos Gráficos Chronicon" class="img-fluid">
+          </div>
+          <h5 class="text-white fw-bold mb-1">Identidad Visual Chronicon</h5>
+          <p class="small text-white-50 mb-3">Patrimonio, Diversidad y Cultura en cada rincón</p>
+          <a href="#emblemas" class="btn btn-sm btn-outline-light w-100"><i class="bi bi-grid-3x3-gap"></i> Conocer Colección Gráfica</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       4. CONTENIDO PRINCIPAL (MAIN)
+       ======================================================================== -->
+  <main>
+
+    <!-- 4.1. SECCIÓN DE PILARES DE COLOR Y ESTADÍSTICAS (FLEXBOX) -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-flex-container">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="bi bi-fire"></i>
+            </div>
+            <div>
+              <div class="stat-number">+400</div>
+              <div class="stat-label"><strong>Energía & Pasión:</strong> Años de historia viva</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="bi bi-compass"></i>
+            </div>
+            <div>
+              <div class="stat-number">6</div>
+              <div class="stat-label"><strong>Exploración:</strong> Destinos de patrimonio</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="bi bi-tree"></i>
+            </div>
+            <div>
+              <div class="stat-number">100%</div>
+              <div class="stat-label"><strong>Naturaleza & Paisajes:</strong> Senderos y maravillas</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="bi bi-rainbow"></i>
+            </div>
+            <div>
+              <div class="stat-number">Unidos</div>
+              <div class="stat-label"><strong>Cultura & Diversidad:</strong> Voces que construyen futuro</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.2. SECCIÓN NUEVA: GALERÍA DE EMBLEMAS E ISOTIPOS GRÁFICOS -->
+    <section id="emblemas" class="section-emblems-gallery">
+      <div class="container">
+        <div class="section-header-block mb-3">
+          <span class="section-subtitle-tag">Simbología y Arte</span>
+          <h2 class="section-title">Colección de Emblemas Chronicon</h2>
+          <p class="section-description">
+            Cuatro representaciones gráficas que unen la historia y el patrimonio de Colombia con los colores vibrantes de la diversidad y la inclusión.
+          </p>
+        </div>
+
+        <div class="emblems-grid">
+          <div class="emblem-card">
+            <img src="assets/isotipos.png" alt="Emblema Historia Viva" style="object-position: 10% 20%;">
+            <h5>Historia Viva</h5>
+            <p>Brújula y astrolabio colonial que guían la memoria de nuestras raíces.</p>
+          </div>
+
+          <div class="emblem-card">
+            <img src="assets/isotipos.png" alt="Emblema Sabiduría" style="object-position: 85% 20%;">
+            <h5>Sabiduría & Memoria</h5>
+            <p>Pluma y pergamino que preservan relatos, crónicas y legados históricos.</p>
+          </div>
+
+          <div class="emblem-card">
+            <img src="assets/isotipos.png" alt="Emblema Patrimonio Cultural" style="object-position: 15% 85%;">
+            <h5>Patrimonio Monumental</h5>
+            <p>Arquitectura colonial y santuarios representativos del país.</p>
+          </div>
+
+          <div class="emblem-card">
+            <img src="assets/isotipos.png" alt="Emblema Descubre el Pasado" style="object-position: 85% 85%;">
+            <h5>Tiempo & Transformación</h5>
+            <p>Reloj de arena con el arcoíris de la diversidad que trasciende el tiempo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.3. SECCIÓN EXPLORAR LUGARES HISTÓRICOS (CARDS FLEXBOX) -->
+    <section id="lugares" class="section-places">
+      <div class="container">
+        <div class="section-header-block">
+          <span class="section-subtitle-tag">Destinos de Patrimonio</span>
+          <h2 class="section-title">Explora los Lugares Históricos</h2>
+          <p class="section-description">
+            Recorre la riqueza arquitectónica, arqueológica y natural que forjó nuestra identidad cultural en Colombia.
+          </p>
+        </div>
+
+        <!-- Grilla interactiva de lugares renderizada con Flexbox y Vanilla JS -->
+        <div id="places-grid-container" class="places-flex-grid">
+          <!-- Las tarjetas <article> se generan dinámicamente desde script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.3. SECCIÓN "¿POR QUÉ VISITAR?" Y ASIDE EDUCATIVO -->
+    <section class="section-features-aside">
+      <div class="container">
+        <div class="features-layout-flex">
+          
+          <!-- Bloque de beneficios principales -->
+          <div class="features-main-content">
+            <span class="section-subtitle-tag">Aprender y Viajar</span>
+            <h2 class="section-title mb-4">¿Por qué visitar lugares históricos?</h2>
+            
+            <div class="feature-pill-box">
+              <div class="feature-pill-icon">
+                <i class="bi bi-book"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-1">Aprender más allá de los libros (Energía)</h4>
+                <p class="text-muted mb-0 small">
+                  Estar en el lugar exacto donde ocurrieron los hechos transforma el aprendizaje escolar en una experiencia vívida e inolvidable.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-pill-box">
+              <div class="feature-pill-icon">
+                <i class="bi bi-compass"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-1">Turismo visual y cultural (Exploración)</h4>
+                <p class="text-muted mb-0 small">
+                  La arquitectura colonial, las murallas y las maravillas subterráneas ofrecen escenarios perfectos para compartir en comunidad.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-pill-box">
+              <div class="feature-pill-icon">
+                <i class="bi bi-tree"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-1">Preservación del patrimonio (Naturaleza & Memoria)</h4>
+                <p class="text-muted mb-0 small">
+                  Visitar y valorar estos espacios impulsa la conservación de monumentos y tradiciones para las futuras generaciones.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-pill-box">
+              <div class="feature-pill-icon">
+                <i class="bi bi-rainbow"></i>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-1">Inclusión y Voces Diversas (Diversidad)</h4>
+                <p class="text-muted mb-0 small">
+                  La historia la construimos todas y todos; cada comunidad aporta su mirada, arte y cultura para un país más tolerante e integrado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aside complementario: Datos curiosos y consejos -->
+          <aside class="sidebar-aside-card">
+            <h3><i class="bi bi-lightbulb"></i> Sabías que...</h3>
+            
+            <div class="curiosity-item">
+              <h4>Murallas de Cartagena</h4>
+              <p>Tardaron más de 200 años en completarse debido a tormentas marinas y asedios piratas.</p>
+            </div>
+
+            <div class="curiosity-item">
+              <h4>Mina de Sal de Zipaquirá</h4>
+              <p>Los depósitos salinos tienen una antigüedad geológica de más de 250 millones de años.</p>
+            </div>
+
+            <div class="curiosity-item">
+              <h4>Consejo de viaje escolar</h4>
+              <p>Planifica visitas en horarios matutinos y usa calzado cómodo para caminar sobre adoquines.</p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.4. SECCIÓN COMUNIDAD / FORO INFORMATIVO SIMULADO -->
+    <section id="comunidad" class="section-community">
+      <div class="container">
+        <div class="section-header-block">
+          <span class="section-subtitle-tag">Espacio de Participación</span>
+          <h2 class="section-title">Comunidad y Foro de Debate</h2>
+          <p class="section-description">
+            Comparte tus impresiones, descubre recomendaciones de otros estudiantes y súmate a la conversación histórica.
+          </p>
+        </div>
+
+        <!-- Contenedor del foro simulado -->
+        <div id="forum-posts-container" class="community-container-flex">
+          <!-- Publicaciones y comentarios renderizados con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.5. SECCIÓN RESERVA SIMULADA -->
+    <section id="reserva" class="section-booking">
+      <div class="container">
+        <div class="section-header-block">
+          <span class="section-subtitle-tag">Planificador Demostrativo</span>
+          <h2 class="section-title">Inicia tu Reserva Simulada</h2>
+          <p class="section-description">
+            Organiza una visita educativa o familiar. Este módulo genera una constancia ficticia con fines pedagógicos.
+          </p>
+        </div>
+
+        <div class="booking-wrapper">
+          <!-- Panel de información y disclaimer -->
+          <div class="booking-info-panel">
+            <div>
+              <h3><i class="bi bi-calendar2-heart"></i> Planea tu Aventura</h3>
+              <p class="small text-white-50">
+                Selecciona tu destino patrimonial favorito, define la fecha estimada y obtén tu código de constancia de reserva simulada.
+              </p>
+              
+              <ul class="list-unstyled small text-white mt-4">
+                <li class="mb-2"><i class="bi bi-check2-circle text-warning"></i> Confirmación visual instantánea</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-warning"></i> Guardado en sesión del navegador</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-warning"></i> Sin necesidad de registro ni contraseñas</li>
+              </ul>
+            </div>
+
+            <div class="booking-notice-badge">
+              <strong><i class="bi bi-shield-exclamation"></i> Nota Importante:</strong>
+              <p class="mb-0 mt-1">
+                Reserva demostrativa — no genera pagos ni una reserva real. Es un proyecto académico exclusivamente para fines educativos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Panel con formulario interactivo -->
+          <div class="booking-form-panel">
+            <div id="booking-alert" class="d-none"></div>
+
+            <form id="booking-form">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="booking-place" class="form-label form-label-custom">
+                    <i class="bi bi-geo-alt"></i> Lugar Histórico:
+                  </label>
+                  <select id="booking-place" class="form-select form-control-custom" required>
+                    <!-- Opciones pobladas por script.js -->
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="booking-date" class="form-label form-label-custom">
+                    <i class="bi bi-calendar3"></i> Fecha de Visita:
+                  </label>
+                  <input type="date" id="booking-date" class="form-control form-control-custom" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="booking-visitors" class="form-label form-label-custom">
+                    <i class="bi bi-people"></i> Número de Visitantes:
+                  </label>
+                  <input type="number" id="booking-visitors" class="form-control form-control-custom" min="1" max="50" value="1" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="booking-name" class="form-label form-label-custom">
+                    <i class="bi bi-person"></i> Nombre Completo:
+                  </label>
+                  <input type="text" id="booking-name" class="form-control form-control-custom" placeholder="Ej. María Pérez" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="booking-email" class="form-label form-label-custom">
+                    <i class="bi bi-envelope"></i> Correo Electrónico:
+                  </label>
+                  <input type="email" id="booking-email" class="form-control form-control-custom" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="booking-type" class="form-label form-label-custom">
+                    <i class="bi bi-tags"></i> Tipo de Visita:
+                  </label>
+                  <select id="booking-type" class="form-select form-control-custom" required>
+                    <option value="" selected disabled>Selecciona el tipo de grupo...</option>
+                    <option value="Individual">Individual (1 persona)</option>
+                    <option value="Familiar">Familiar (2 a 6 personas)</option>
+                    <option value="Escolar">Escolar / Pedagógica (Grupo estudiantil)</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-chronicon-primary w-100 py-2">
+                    <i class="bi bi-ticket-perforated"></i> Confirmar Reserva Simulada
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Voucher de confirmación simulada -->
+            <div id="booking-voucher" class="booking-voucher-card">
+              <div class="voucher-header">
+                <div>
+                  <h5 class="fw-bold text-primary mb-0"><i class="bi bi-check-circle-fill text-success"></i> ¡Reserva Demostrativa Exitosa!</h5>
+                  <small class="text-muted">Proyecto académico Chronicon</small>
+                </div>
+                <div class="voucher-code" id="voucher-code-display">RH-0000</div>
+              </div>
+              <div id="voucher-details-display">
+                <!-- Detalles inyectados por JavaScript -->
+              </div>
+              <div class="mt-3 pt-2 border-top d-flex justify-content-between align-items-center">
+                <small class="text-danger"><i class="bi bi-info-circle"></i> Válido únicamente como demostración de clase.</small>
+                <button class="btn btn-sm btn-outline-secondary" onclick="reiniciarReserva()">
+                  <i class="bi bi-arrow-repeat"></i> Nueva Reserva
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.6. SECCIÓN ACERCA DEL PROYECTO -->
+    <section id="acerca" class="section-about">
+      <div class="container">
+        <div class="about-card">
+          <span class="section-subtitle-tag">Contexto y Propósito</span>
+          <h2 class="section-title mb-3">Acerca de Chronicon</h2>
+          <p class="text-muted">
+            Chronicon es un proyecto de carácter formativo y escolar concebido para difundir el valor de los monumentos históricos colombianos. Busca combinar diseño visual moderno, desarrollo frontend estándar (HTML5, CSS3, Flexbox y JavaScript Vanilla) y buenas prácticas de accesibilidad y semántica web.
+          </p>
+          <p class="text-muted small">
+            Este portal no representa a las entidades turísticas oficiales y las funciones de reserva son 100% simuladas sin pasarelas de pago ni almacenamiento en servidores remotos.
+          </p>
+          
+          <div class="about-developer-badge">
+            <i class="bi bi-award-fill text-warning"></i>
+            Proyecto realizado por <strong>María José Olaya Suárez</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       5. PIE DE PÁGINA OBLIGATORIO (FOOTER)
+       ======================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-flex-container">
+        
+        <div class="footer-brand-col">
+          <div class="navbar-brand-custom text-white mb-2">
+            <img src="assets/isotipos.png" alt="Logo Chronicon" class="brand-isotipo-img me-2">
+            Chronicon
+          </div>
+          <p class="small text-white-50">
+            Descubre el pasado. Vive el lugar. Portal educativo para la exploración del patrimonio histórico, la diversidad y la cultura.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h6 class="text-white fw-bold mb-3">Navegación</h6>
+          <ul class="footer-links-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#lugares">Lugares Históricos</a></li>
+            <li><a href="#comunidad">Comunidad / Foro</a></li>
+            <li><a href="#reserva">Reserva Demostrativa</a></li>
+            <li><a href="#acerca">Acerca del Proyecto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h6 class="text-white fw-bold mb-3">Lugares Destacados</h6>
+          <ul class="footer-links-list">
+            <li><a href="#lugares">Ciudad Amurallada</a></li>
+            <li><a href="#lugares">Castillo San Felipe</a></li>
+            <li><a href="#lugares">Museo del Oro</a></li>
+            <li><a href="#lugares">Villa de Leyva</a></li>
+            <li><a href="#lugares">Catedral de Sal</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Firma académica exacta requerida -->
+      <div class="footer-academic-signature">
+        <p class="footer-exact-author-text">Hecho por María José Olaya Suárez</p>
+        <p class="footer-academic-subtext">Proyecto académico · Chronicon · Frontend HTML5 & CSS3 Flexbox</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       6. MODAL DE DETALLE DE LUGAR HISTÓRICO
+       ======================================================================== -->
+  <div class="modal fade" id="placeDetailModal" tabindex="-1" aria-labelledby="placeDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-primary text-white border-0">
+          <h5 class="modal-title font-heading fw-bold" id="placeDetailModalLabel">Detalle del Lugar</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-4" id="placeDetailModalBody">
+          <!-- Contenido inyectado dinámicamente por script.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script JavaScript del proyecto -->
+  <script src="script.js"></script>
+
+</body>
+</html>
