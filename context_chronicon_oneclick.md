@@ -149,11 +149,13 @@ El proyecto debe poder ejecutarse abriendo `index.html` o usando la extensión L
 ## 7. Estructura mínima del proyecto
 
 ```text
-rutas-de-historia/
+Chronicon/
 │
 ├── index.html
 ├── style.css
 ├── script.js
+├── README.md
+├── context_chronicon_oneclick.md
 │
 ├── pages/
 │   ├── lugares.html
@@ -161,8 +163,17 @@ rutas-de-historia/
 │   ├── comunidad.html
 │   └── reserva.html
 │
-└── assets/
-    └── images/
+├── assets/
+│   ├── isotipos.png             # 4 emblemas con anillo multicolor de diversidad
+│   ├── isotipos2.png            # Iconos e isotipos transparentes para showcase
+│   ├── isotipos23.png
+│   ├── isotipos4.png
+│   ├── brand/                   # Logos e iconos de aplicación
+│   └── css/brand-colors.css     # Tokens de color de marca
+│
+└── .oneclick/
+    ├── document-structure.json
+    └── workflow-state.json
 ```
 
 Si OneClick considera que una estructura todavía más simple es conveniente para el nivel académico, puede mantener varias secciones dentro de `index.html`, pero debe conservar una organización clara.
@@ -323,29 +334,37 @@ El menú debe permanecer limpio, accesible y fácil de entender.
 
 ## 10. Diseño UI/UX
 
-La experiencia debe sentirse juvenil, cultural y moderna.
+La experiencia debe sentirse juvenil, cultural, inclusiva y moderna.
 
 ### Dirección visual
 
 Mezclar:
 
-- Estética editorial.
-- Fotografía histórica/turística.
-- Tarjetas modernas.
+- Estética editorial y cultural.
+- Simbología gráfica de diversidad e inclusión (inspirada en la bandera LGBTQ+).
+- Fotografía histórica y turística de alta calidad.
+- Tarjetas modernas con elevación y sombras suaves.
 - Jerarquía tipográfica fuerte.
-- Secciones amplias.
-- Bordes redondeados.
-- Sombras suaves.
-- Animaciones discretas.
+- Secciones amplias y fluidas.
+- Bordes redondeados y transiciones sutiles.
 
-### Paleta sugerida
+### Paleta de Colores Oficial (Identidad & Diversidad)
 
-- Azul noche: `#14213D`
-- Dorado cálido: `#E9B949`
-- Terracota: `#C96A4A`
-- Crema: `#F7F3EA`
-- Blanco: `#FFFFFF`
-- Gris texto: `#4B5563`
+| Código Hex | Nombre / Pilar Temático | Uso y Significado en la Plataforma |
+|---|---|---|
+| `#14213D` | **Fondo principal** | Azul noche profundo: base de contrastes, banners y footer. |
+| `#E63946` | **Energía** | Rojo coral vibrante: llamados a la acción, fortificaciones y pasión por la historia. |
+| `#FF7A00` | **Exploración** | Naranja activo: badges de descubrimiento, aventura y dinamismo juvenil. |
+| `#F4C542` | **Patrimonio** | Amarillo dorado cálido: monumentos nacionales, riqueza colonial y elementos destacados. |
+| `#18A558` | **Naturaleza** | Verde esmeralda: senderos ecológicos, maravillas subterráneas y geología. |
+| `#0066CC` | **Cultura** | Azul real: museos, arqueología, educación y navegación. |
+| `#7B2CBF` | **Diversidad** | Púrpura inclusivo: comunidad, convivencia, respeto a todas las identidades y acentos hover. |
+| `#F7F3EA` | **Fondos claros** | Crema suave: fondo principal para descanso visual y lectura cómoda. |
+
+### Gradientes Oficiales
+
+- **Gradiente Arcoíris / Diversidad:** `linear-gradient(90deg, #E63946 0%, #FF7A00 20%, #F4C542 40%, #18A558 60%, #0066CC 80%, #7B2CBF 100%)`
+- **Gradiente Suave:** `linear-gradient(135deg, rgba(230,57,70,0.08), rgba(255,122,0,0.08), rgba(244,197,66,0.08), rgba(24,165,88,0.08), rgba(0,102,204,0.08), rgba(123,44,191,0.08))`
 
 ### Tipografía
 
@@ -551,22 +570,27 @@ Este texto debe aparecer de forma visible en el pie de página (`footer`) y no d
 
 ---
 
-## 18. Uso de imágenes
+## 18. Uso de imágenes, isotipos e iconografía (`assets/`)
 
-Las imágenes deben reforzar la identidad histórica y turística.
+Las imágenes e isotipos refuerzan la identidad histórica, turística y de inclusión:
 
-Preferencias:
+### 18.1. Colección de Emblemas e Isotipos Oficiales (`assets/`)
+El proyecto integra activos visuales diseñados con el anillo multicolor de diversidad:
+- **`assets/isotipos.png`**: Cuadro con los 4 emblemas oficiales:
+  1. **Historia Viva:** Brújula y astrolabio colonial que guían la memoria histórica.
+  2. **Sabiduría & Memoria:** Libro y pluma que preservan relatos, crónicas y legados.
+  3. **Patrimonio Monumental:** Arquitectura colonial, santuarios y templos emblemáticos.
+  4. **Tiempo & Transformación:** Reloj de arena con espectro de diversidad y proyección futura.
+- **`assets/isotipos2.png`**: Galería de isotipos transparentes empleados en el Hero Section.
+- **`assets/brand/`**: Logotipos oficiales en variaciones horizontal, vertical, primary, monochrome y dark, junto con el set de favicons (`favicon-16.png` hasta `app-icon-512.png`).
 
-- Arquitectura colonial.
-- Museos.
-- Plazas.
-- Fortificaciones.
-- Patrimonio colombiano.
-- Jóvenes explorando espacios culturales.
+### 18.2. Fotografías de Patrimonio
+- Arquitectura colonial (Cartagena, Villa de Leyva).
+- Museos y arqueología (Museo del Oro, Quinta de Bolívar).
+- Maravillas naturales y subterráneas (Catedral de Sal de Zipaquirá).
+- Fortificaciones militares (Castillo San Felipe de Barajas).
 
-Evitar imágenes irrelevantes.
-
-Si OneClick no puede descargar imágenes, utilizar URLs remotas confiables o placeholders elegantes y dejar comentarios claros para reemplazarlas.
+Evitar imágenes irrelevantes. Las imágenes externas provienen de Unsplash con optimización de carga y parámetros de resolución adaptativa.
 
 No incrustar imágenes gigantes en base64.
 
